@@ -26,4 +26,8 @@
 
 <!-- loading app-post-item -->
 
-<app-post-item *ngFor="let pst of posts" [post]="pst" (hidePost)="hidePost($event)"></app-post-item>
+<app-post-item
+  *ngFor="let pst of posts"
+  [post]="pst"
+  (hidePost)="hidePost($event)"
+></app-post-item>
