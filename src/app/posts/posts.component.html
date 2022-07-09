@@ -1,7 +1,30 @@
-<h1>posts works!</h1>
-<h2> {{ title}}</h2>
-<ul>
-    <li>{{ing[0]}}</li>
-    <li>{{ing[1]}}</li>
-    <li>{{ing[2]}}</li>
+<!-- <h2>posts works!</h2>
+<h2> {{ title}}</h2> -->
+
+<!-- <h2>Using strructral directives <mark>*ngFor</mark></h2>
+
+<ul *ngFor="let pst of posts">
+    <li>Post Id #:{{ pst.id}}</li>
+    <li>Title: {{pst.title}}</li>
+    <li>Votes: {{pst.votes}}</li>
+</ul> -->
+<!-- 
+<h2>Conditional Rendering with <mark>ngIf</mark></h2>
+<ul *ngFor="let pst of posts">
+    <li *ngIf="pst.votes <= 3">Post Id #:{{ pst.id}}</li>
+    <li *ngIf="pst.votes <= 3">Title: {{pst.title}}</li>
+    <li *ngIf="pst.votes <= 3">Votes: {{pst.votes}}</li>
 </ul>
+
+
+<h2>Using Attribute directives <mark>[ngStyle]</mark></h2>
+<ul *ngFor="let pst of posts">
+    <li [ngStyle]="{'color':pst.votes >=3? 'green': 'red'}">Post Id #:{{ pst.id}}</li>
+    <li [ngStyle]="{'color':pst.votes >=3? 'green': 'red'}">Title: {{pst.title}}</li>
+    <li [ngStyle]="{'color':pst.votes >=3? 'green': 'red'}">Votes: {{pst.votes}}</li>
+</ul> -->
+
+
+<!-- loading app-post-item -->
+
+<app-post-item *ngFor="let pst of posts" [post]="pst" (hidePost)="hidePost($event)"></app-post-item>
