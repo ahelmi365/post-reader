@@ -24,7 +24,6 @@
     <li [ngStyle]="{'color':pst.votes >=3? 'green': 'red'}">Votes: {{pst.votes}}</li>
 </ul> -->
 
-
 <!-- loading app-post-item -->
 
 <app-post-item *ngFor="let pst of posts" [post]="pst" (hidePost)="hidePost($event)"></app-post-item>
