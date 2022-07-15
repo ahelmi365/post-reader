@@ -37,9 +37,9 @@ export class PostItemComponent implements OnInit {
     this.hidePost.emit(post);
   }
 
-  // like(post:Post):void{
-  //   alert(`I liked post #${this.post.id}`)
-  // }
+  Normallike(post:Post):void{
+    alert(`I normally liked post #${this.post.id}`)
+  }
 
 
 }
