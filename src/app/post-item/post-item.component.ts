@@ -9,6 +9,7 @@ import { Post } from '../models/Post';
 export class PostItemComponent implements OnInit {
   @Input() post:Post;
   @Output() hidePost:EventEmitter<Post> = new EventEmitter;
+  @Output() liked = new EventEmitter();
 
   constructor() {
     this.post={
@@ -35,5 +36,10 @@ export class PostItemComponent implements OnInit {
   hide(post:Post):void{
     this.hidePost.emit(post);
   }
+
+  // like(post:Post):void{
+  //   alert(`I liked post #${this.post.id}`)
+  // }
+
 
 }

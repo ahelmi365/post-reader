@@ -30,4 +30,5 @@
   *ngFor="let pst of posts"
   [post]="pst"
   (hidePost)="hidePost($event)"
+  (liked) = "onLike($event)" 
 ></app-post-item>
