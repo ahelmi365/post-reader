@@ -9,7 +9,5 @@ export class Post{
         this.title='';
         this.body='';
         this.votes=1;
-
     }
-
 }
