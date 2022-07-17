@@ -6,17 +6,24 @@
 </div >
 <hr>  -->
 
-<form style="margin-bottom: 40px">
-    <label for="id-{{user.id}}">User ID: </label>
-    <input type="number" name="id" id="id-{{user.id}}" [value]="user.id" />
-    <br />
-    <label for="name-{{user.id}}">User Name: </label>
-    <input type="text" name="name" id="name-{{user.id}}" [value]="user.name" />
-    <br />
-    <label for="username-{{user.id}}">User Username: </label>
-    <input type="text" name="username" id="username-{{user.id}}" [value]="user.username" />
-    <br />
-    <label for="email-{{user.id}}">User Email: </label>
-    <input type="email" name="email" id="email-{{user.id}}" [value]="user.email" />
+<form style="margin: 20px 0 20px 0">
+    <div class="container">
+        <div class="item">
+            <label for="id-{{ user.id }}">User ID: </label>
+            <input type="number" name="id" id="id-{{ user.id }}" [value]="user.id" />
+            <br />
+            <label for="name-{{ user.id }}">Name: </label>
+            <input type="text" name="name" id="name-{{ user.id }}" [value]="user.name" />
+        </div>
+
+        <!-- <br /> -->
+        <div class="item">
+            <label for="username-{{ user.id }}">Username: </label>
+            <input type="text" name="username" id="username-{{ user.id }}" [value]="user.username" />
+            <br />
+            <label for="email-{{ user.id }}">Email: </label>
+            <input type="email" name="email" id="email-{{ user.id }}" [value]="user.email" />
+        </div>
+    </div>
 </form>
 <hr />
