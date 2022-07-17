@@ -1,12 +1,26 @@
-<h2>Title: {{ post.title }}</h2>
-<p>body: {{ post.body }}</p>
-<p>Votes: {{ post.votes }}</p>
+<div style="margin-bottom: 40px">
+    <h3>Title: {{ post.title }}</h3>
+    <p>Post ID: {{ post.id }}</p>
+    <p>body: {{ post.body }}</p>
+    <p>Votes: {{ post.votes }}</p>
 
-<button (click)="upVote(post)">Upvote</button>
-<button (click)="downVote(post)">Downvote</button>
+    <button (click)="upVote(post)" class="btn btn-primary" style="margin-right: 10px">
+        Upvote
+    </button>
+    <button (click)="downVote(post)" class="btn btn-primary" style="margin-right: 10px">
+        Downvote
+    </button>
 
-<button (click)="hide(post)">Hide Post</button>
+    <button (click)="hide(post)" class="btn btn-primary" style="margin-right: 10px">
+        Hide Post
+    </button>
 
-<button (click)="liked.emit(post)">Like</button>
+    <button (click)="like()" class="btn btn-primary" style="margin-right: 10px">
+        Like
+    </button>
 
-<button (click)="Normallike(post)">Norma Like</button>
+    <button (click)="Normallike(post)" class="btn btn-primary" style="margin-right: 10px">
+        Normal Like
+    </button>
+</div>
+<hr>

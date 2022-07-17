@@ -1,0 +1,22 @@
+<!-- <div  style="margin-bottom: 40px">
+    <p>User ID: {{user.id}}</p>
+    <p>User Name: {{user.name}}</p>
+    <p>User UserName: {{user.username}}</p>
+    <p>User Email: {{user.email}}</p>
+</div >
+<hr>  -->
+
+<form style="margin-bottom: 40px">
+    <label for="id-{{user.id}}">User ID: </label>
+    <input type="number" name="id" id="id-{{user.id}}" [value]="user.id" />
+    <br />
+    <label for="name-{{user.id}}">User Name: </label>
+    <input type="text" name="name" id="name-{{user.id}}" [value]="user.name" />
+    <br />
+    <label for="username-{{user.id}}">User Username: </label>
+    <input type="text" name="username" id="username-{{user.id}}" [value]="user.username" />
+    <br />
+    <label for="email-{{user.id}}">User Email: </label>
+    <input type="email" name="email" id="email-{{user.id}}" [value]="user.email" />
+</form>
+<hr />

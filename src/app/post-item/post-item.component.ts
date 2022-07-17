@@ -29,7 +29,7 @@ export class PostItemComponent implements OnInit {
 
   downVote(post:Post):void{
     if(post.votes>0){
-    post.votes-=1;
+      post.votes-=1;
     }
   }
 
@@ -39,6 +39,10 @@ export class PostItemComponent implements OnInit {
 
   Normallike(post:Post):void{
     alert(`I normally liked post #${this.post.id}`)
+  }
+  like (){
+    this.liked.emit(this.post);
+
   }
 
 
