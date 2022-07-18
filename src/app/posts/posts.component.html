@@ -25,10 +25,8 @@
 </ul> -->
 
 <!-- loading app-post-item -->
-
-<app-post-item
-  *ngFor="let pst of posts"
-  [post]="pst"
-  (hidePost)="hidePost($event)"
-  (liked) = "onLike($event)" 
-></app-post-item>
+<app-create-post (addPost)="addPost($event)"></app-create-post>
+<br>
+<hr>
+<app-post-item *ngFor="let pst of posts" [post]="pst" (hidePost)="hidePost($event)" (liked)="onLike($event)">
+</app-post-item>

@@ -35,6 +35,9 @@ export class PostsComponent implements OnInit {
 
   onLike(post:Post):void{
     window.alert(`I liked post #${post.id}`);
-
+  }
+  addPost(post:Post){
+    this.posts.unshift(post);
+    window.alert("Your post is added!");
   }
 }

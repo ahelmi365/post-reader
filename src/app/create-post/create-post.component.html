@@ -1,0 +1,16 @@
+<!-- <p>create-post works!</p> -->
+
+<form action="" name="myForm" (ngSubmit)="submitForm()">
+    <h1>Create Post</h1>
+
+    <label for="postTitle">Post Title</label>
+    <br>
+    <input name="postTitle" type="text" id="postTitle" placeholder="Please enter a title" [(ngModel)]="title">
+    <br>
+
+    <label for="postBody">Post Body</label>
+    <br>
+    <textarea name="postBody" id="postBody" cols="60" rows="3" placeholder="Please enter your post" [(ngModel)]="body"></textarea>
+    <br>
+    <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+</form>
