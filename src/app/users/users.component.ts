@@ -21,4 +21,9 @@ users :User[]=[];
     })
   }
 
+  addUser(user:User):void{
+    this.users.unshift(user);
+    // window.alert("Your User is added!");
+  }
+
 }

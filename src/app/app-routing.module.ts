@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 import { PostsComponent } from './posts/posts.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'', component:PostsComponent},
   {path:'history', component:HistoryComponent},
   {path:'users', component:UsersComponent},
-  {path:'createPost', component:CreatePostComponent}
+  {path:'createPost', component:CreatePostComponent},
+  {path:'signin', component:SignInComponent}
 ];
 
 @NgModule({

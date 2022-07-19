@@ -1,4 +1,8 @@
 <!-- <p>users works!</p> -->
+<app-create-user (addUser)="addUser($event)"></app-create-user>
+
+<br>
+<h1>List of Users</h1>
 <app-user-item 
     *ngFor="let usr of users"
     [user]="usr"

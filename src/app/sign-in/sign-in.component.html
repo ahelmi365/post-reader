@@ -1,0 +1,27 @@
+<!-- <p>sign-in works!</p> -->
+<form #myForm="ngForm" action="" (ngSubmit)="onSubmit()">
+    <label for="username">User Name</label>
+    <input #userName="ngModel" required minlength="3" maxlength="10" name="username" type="text" id="username"
+        [(ngModel)]="username">
+    <br>
+    <br>
+    <label for="password">Password</label>
+    <input name="password" type="password" id="password"
+        [(ngModel)]="password">
+    <br>
+    <br>
+    <!-- <button type="submit" [disabled]="myForm.invalid" class="btn btn-primary">Login</button> -->
+    <button type="submit"  class="btn btn-primary">Login</button>
+</form>
+<br>
+
+<div *ngIf="userName.invalid && userName.dirty">
+    
+    <div *ngIf="userName.errors?.['required'] ">
+        <p>the User name is required</p>
+    </div>
+
+    <div *ngIF="userName.errors.minlength">
+        <p>the Min length of the username is 3</p>
+    </div>
+</div>
